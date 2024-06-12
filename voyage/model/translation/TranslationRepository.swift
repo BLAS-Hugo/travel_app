@@ -1,5 +1,5 @@
 //
-//  translation_repository.swift
+//  TranslationRepository.swift
 //  voyage
 //
 //  Created by Hugo Blas on 11/06/2024.
@@ -11,15 +11,15 @@ class TranslationRepository {
     private let baseUrl: String = "https://translation.googleapis.com/language/translate/v2"
     private let apiKey: String = "AIzaSyB4e9UBWTbn9jjnaIS3z-xUJ9aTQ26pbyc"
 
-    public func translate(source: String) async throws -> String {
+    public func translate(source: String) async throws -> Translation {
         let url = URL(string: "\(baseUrl)?key=\(apiKey)&q=\(source)&target=en")
 
         let request = URLRequest(url: url!)
 
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (data, _) = try await URLSession.shared.data(for: request)
 
-        print(data)
+        let translate = try JSONDecoder().decode(TranslationResponse.self, from: data)
 
-        return ""
+        return translate.data.translations.first!
     }
 }

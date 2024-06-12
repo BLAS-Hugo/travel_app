@@ -16,6 +16,8 @@
 		9A3593F42C1223AD008A83F4 /* CurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593F32C1223AD008A83F4 /* CurrencyRepository.swift */; };
 		9A3593F82C12643A008A83F4 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593F72C12643A008A83F4 /* ExchangeRate.swift */; };
 		9A3593FA2C12D8E4008A83F4 /* RatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593F92C12D8E4008A83F4 /* RatesResponse.swift */; };
+		9A75996A2C18E0C400CB3C3B /* TranslationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7599692C18E0C400CB3C3B /* TranslationRepository.swift */; };
+		9A75996C2C197DB300CB3C3B /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A75996B2C197DB200CB3C3B /* TranslationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9A3593F32C1223AD008A83F4 /* CurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepository.swift; sourceTree = "<group>"; };
 		9A3593F72C12643A008A83F4 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		9A3593F92C12D8E4008A83F4 /* RatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesResponse.swift; sourceTree = "<group>"; };
+		9A7599692C18E0C400CB3C3B /* TranslationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationRepository.swift; sourceTree = "<group>"; };
+		9A75996B2C197DB200CB3C3B /* TranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		9A7599682C18DDDC00CB3C3B /* translation */ = {
 			isa = PBXGroup;
 			children = (
+				9A7599692C18E0C400CB3C3B /* TranslationRepository.swift */,
+				9A75996B2C197DB200CB3C3B /* TranslationResponse.swift */,
 			);
 			path = translation;
 			sourceTree = "<group>";
@@ -173,9 +179,11 @@
 			files = (
 				9A3593E32C1222F3008A83F4 /* ViewController.swift in Sources */,
 				9A3593F82C12643A008A83F4 /* ExchangeRate.swift in Sources */,
+				9A75996C2C197DB300CB3C3B /* TranslationResponse.swift in Sources */,
 				9A3593FA2C12D8E4008A83F4 /* RatesResponse.swift in Sources */,
 				9A3593DF2C1222F3008A83F4 /* AppDelegate.swift in Sources */,
 				9A3593F42C1223AD008A83F4 /* CurrencyRepository.swift in Sources */,
+				9A75996A2C18E0C400CB3C3B /* TranslationRepository.swift in Sources */,
 				9A3593E12C1222F3008A83F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

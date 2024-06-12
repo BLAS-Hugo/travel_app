@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+class TranslationResponse: Codable {
+    let data: Translations
+}
+
+class Translations: Codable {
+    let translations: [Translation]
+}
+
+class Translation: Codable {
+    let translatedText: String
+    let detectedSourceLanguage: String
+}
