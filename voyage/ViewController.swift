@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         Task.init {
             // try await CurrencyRepository().getExchangeRates()
             // try await TranslationRepository().translate(source: "Anglais")
-            try await WeatherRepository().getWeather(lat: "40.7", lon: "70")
+            try await WeatherRepository().getWeather(city: City.nyc)
         }
     }
 
