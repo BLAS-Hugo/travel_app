@@ -12,8 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Task.init {
-            // let rates = try await CurrencyRepository().getExchangeRates()
-            let translate = try await TranslationRepository().translate(source: "Anglais")
+            // try await CurrencyRepository().getExchangeRates()
+            // try await TranslationRepository().translate(source: "Anglais")
+            try await WeatherRepository().getWeather(lat: "40.7", lon: "70")
         }
     }
 

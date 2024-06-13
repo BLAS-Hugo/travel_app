@@ -12,20 +12,6 @@ class CurrencyRepository {
     private let apiKey: String = "b798a571e8bc935167eafe2edf2b0bc2"
 
     public func getExchangeRates() async throws -> RatesResponse {
-        let rates: RatesResponse
-
-        do {
-            rates = try await fetchExchangeRates()
-        } catch {
-            print("error")
-            throw CurrencyFetchingError.networkError
-        }
-
-
-        return rates
-    }
-
-    private func fetchExchangeRates() async throws -> RatesResponse {
         let url = URL(string: "\(baseUrl)latest?access_key=\(apiKey)")
 
         let request = URLRequest(url: url!)
@@ -36,8 +22,4 @@ class CurrencyRepository {
 
         return rates
     }
-}
-
-enum CurrencyFetchingError: Error {
-case networkError
 }
