@@ -20,6 +20,36 @@ class CurrencyRepository {
 
         let rates = try JSONDecoder().decode(RatesResponse.self, from: data)
 
+        writeToFile(rates: rates)
+
+        readRatesFromCache()
+
         return rates
+    }
+
+    private func writeToFile(rates: RatesResponse) {
+        if let json = try? JSONEncoder().encode(rates) {
+            let url = URL.documentsDirectory.appending(path: "rates.json")
+
+            if FileManager.default.fileExists(atPath: url.path) {
+                try? FileManager.default.removeItem(at: url)
+            }
+
+            FileManager.default.createFile(atPath: url.path, contents: json)
+        }
+    }
+
+    private func readRatesFromCache() {
+        let url = URL.documentsDirectory.appending(path: "rates.json")
+
+        do {
+            let data = try Data(contentsOf: url)
+
+            let rates = try JSONDecoder().decode(RatesResponse.self, from: data)
+
+            print(rates.rates)
+        } catch {
+            print("error")
+        }
     }
 }
