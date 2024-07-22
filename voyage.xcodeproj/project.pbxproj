@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1207B72C3826280056F5A0 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1207B62C3826280056F5A0 /* TranslationViewController.swift */; };
+		9A1207B92C38264C0056F5A0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1207B82C38264C0056F5A0 /* WeatherViewController.swift */; };
 		9A3593DF2C1222F3008A83F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593DE2C1222F3008A83F4 /* AppDelegate.swift */; };
 		9A3593E12C1222F3008A83F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593E02C1222F3008A83F4 /* SceneDelegate.swift */; };
 		9A3593E32C1222F3008A83F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593E22C1222F3008A83F4 /* ViewController.swift */; };
@@ -16,13 +18,42 @@
 		9A3593F42C1223AD008A83F4 /* CurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593F32C1223AD008A83F4 /* CurrencyRepository.swift */; };
 		9A3593F82C12643A008A83F4 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593F72C12643A008A83F4 /* ExchangeRate.swift */; };
 		9A3593FA2C12D8E4008A83F4 /* RatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3593F92C12D8E4008A83F4 /* RatesResponse.swift */; };
+		9A45EC672C4052F8001604CA /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45EC662C4052F8001604CA /* LabelView.swift */; };
 		9A75996A2C18E0C400CB3C3B /* TranslationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7599692C18E0C400CB3C3B /* TranslationRepository.swift */; };
 		9A75996C2C197DB300CB3C3B /* TranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A75996B2C197DB200CB3C3B /* TranslationResponse.swift */; };
 		9A8849982C1B5165000E97CE /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8849972C1B5165000E97CE /* WeatherRepository.swift */; };
 		9A88499A2C1B5585000E97CE /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8849992C1B5585000E97CE /* WeatherResponse.swift */; };
+		9ACFB9372C37F5DC001D50CA /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACFB9362C37F5DC001D50CA /* Weather.json */; };
+		9ACFB9392C37F5F9001D50CA /* FakeWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFB9382C37F5F9001D50CA /* FakeWeatherResponse.swift */; };
+		9ACFB93D2C37F657001D50CA /* WeatherRepositoryTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFB93C2C37F657001D50CA /* WeatherRepositoryTestCase.swift */; };
+		9ACFB9402C37F957001D50CA /* Translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACFB93F2C37F957001D50CA /* Translation.json */; };
+		9ACFB9422C37F9D5001D50CA /* FakeTranslationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFB9412C37F9D5001D50CA /* FakeTranslationResponse.swift */; };
+		9ACFB9442C37FA57001D50CA /* TranslationRepositoryTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACFB9432C37FA57001D50CA /* TranslationRepositoryTestCase.swift */; };
+		9AF4A6CF2C24784600279268 /* CurrencyRepositoryTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4A6CE2C24784600279268 /* CurrencyRepositoryTestCase.swift */; };
+		9AF4A6D12C2479FB00279268 /* ExchangeRates.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AF4A6D02C2479FB00279268 /* ExchangeRates.json */; };
+		9AF4A6D42C247D4700279268 /* FakeCurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4A6D32C247D4700279268 /* FakeCurrencyResponse.swift */; };
+		9AF4A6D62C247E7300279268 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9AF4A6D52C247E7300279268 /* .swiftlint.yml */; };
+		9AF4A6D72C247E7300279268 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9AF4A6D52C247E7300279268 /* .swiftlint.yml */; };
+		9AF4A6E12C2551B400279268 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4A6E02C2551B400279268 /* ExchangeViewController.swift */; };
+		9AF4A6E32C25651A00279268 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4A6E22C25651A00279268 /* MockURLProtocol.swift */; };
+		9AF4A6E52C2566EA00279268 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4A6E42C2566EA00279268 /* APIClientProtocol.swift */; };
+		9AF4A6E72C2567D400279268 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4A6E62C2567D400279268 /* MockAPIClient.swift */; };
+		9AF4A6E92C25693600279268 /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4A6E82C25693600279268 /* BaseAPIClient.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9AF4A6C92C2477CD00279268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A3593D32C1222F3008A83F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A3593DA2C1222F3008A83F4;
+			remoteInfo = voyage;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		9A1207B62C3826280056F5A0 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
+		9A1207B82C38264C0056F5A0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		9A3593DB2C1222F3008A83F4 /* voyage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voyage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3593DE2C1222F3008A83F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3593E02C1222F3008A83F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,14 +65,38 @@
 		9A3593F32C1223AD008A83F4 /* CurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepository.swift; sourceTree = "<group>"; };
 		9A3593F72C12643A008A83F4 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		9A3593F92C12D8E4008A83F4 /* RatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesResponse.swift; sourceTree = "<group>"; };
+		9A45EC662C4052F8001604CA /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		9A7599692C18E0C400CB3C3B /* TranslationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationRepository.swift; sourceTree = "<group>"; };
 		9A75996B2C197DB200CB3C3B /* TranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationResponse.swift; sourceTree = "<group>"; };
 		9A8849972C1B5165000E97CE /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		9A8849992C1B5585000E97CE /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		9ACFB9362C37F5DC001D50CA /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Weather.json; sourceTree = "<group>"; };
+		9ACFB9382C37F5F9001D50CA /* FakeWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWeatherResponse.swift; sourceTree = "<group>"; };
+		9ACFB93C2C37F657001D50CA /* WeatherRepositoryTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryTestCase.swift; sourceTree = "<group>"; };
+		9ACFB93F2C37F957001D50CA /* Translation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Translation.json; sourceTree = "<group>"; };
+		9ACFB9412C37F9D5001D50CA /* FakeTranslationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTranslationResponse.swift; sourceTree = "<group>"; };
+		9ACFB9432C37FA57001D50CA /* TranslationRepositoryTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationRepositoryTestCase.swift; sourceTree = "<group>"; };
+		9AF4A6C52C2477CD00279268 /* voyageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voyageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF4A6CE2C24784600279268 /* CurrencyRepositoryTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepositoryTestCase.swift; sourceTree = "<group>"; };
+		9AF4A6D02C2479FB00279268 /* ExchangeRates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExchangeRates.json; sourceTree = "<group>"; };
+		9AF4A6D32C247D4700279268 /* FakeCurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCurrencyResponse.swift; sourceTree = "<group>"; };
+		9AF4A6D52C247E7300279268 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		9AF4A6E02C2551B400279268 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		9AF4A6E22C25651A00279268 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		9AF4A6E42C2566EA00279268 /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		9AF4A6E62C2567D400279268 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		9AF4A6E82C25693600279268 /* BaseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A3593D82C1222F3008A83F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF4A6C22C2477CD00279268 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,7 +109,9 @@
 		9A3593D22C1222F3008A83F4 = {
 			isa = PBXGroup;
 			children = (
+				9AF4A6D52C247E7300279268 /* .swiftlint.yml */,
 				9A3593DD2C1222F3008A83F4 /* voyage */,
+				9AF4A6C62C2477CD00279268 /* voyageTests */,
 				9A3593DC2C1222F3008A83F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				9A3593DB2C1222F3008A83F4 /* voyage.app */,
+				9AF4A6C52C2477CD00279268 /* voyageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +128,8 @@
 		9A3593DD2C1222F3008A83F4 /* voyage */ = {
 			isa = PBXGroup;
 			children = (
+				9A45EC652C4052C7001604CA /* view */,
+				9AF4A6DF2C25518500279268 /* controller */,
 				9A3593F22C122318008A83F4 /* model */,
 				9A3593DE2C1222F3008A83F4 /* AppDelegate.swift */,
 				9A3593E02C1222F3008A83F4 /* SceneDelegate.swift */,
@@ -88,8 +148,18 @@
 				9A8849962C1B514B000E97CE /* weather */,
 				9A7599682C18DDDC00CB3C3B /* translation */,
 				9A7599672C18DDC000CB3C3B /* currency */,
+				9AF4A6E42C2566EA00279268 /* APIClientProtocol.swift */,
+				9AF4A6E82C25693600279268 /* BaseAPIClient.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		9A45EC652C4052C7001604CA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9A45EC662C4052F8001604CA /* LabelView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		9A7599672C18DDC000CB3C3B /* currency */ = {
@@ -120,6 +190,58 @@
 			path = weather;
 			sourceTree = "<group>";
 		};
+		9ACFB9352C37F5BA001D50CA /* weather */ = {
+			isa = PBXGroup;
+			children = (
+				9ACFB9362C37F5DC001D50CA /* Weather.json */,
+				9ACFB9382C37F5F9001D50CA /* FakeWeatherResponse.swift */,
+				9ACFB93C2C37F657001D50CA /* WeatherRepositoryTestCase.swift */,
+			);
+			path = weather;
+			sourceTree = "<group>";
+		};
+		9ACFB93E2C37F92E001D50CA /* translation */ = {
+			isa = PBXGroup;
+			children = (
+				9ACFB93F2C37F957001D50CA /* Translation.json */,
+				9ACFB9412C37F9D5001D50CA /* FakeTranslationResponse.swift */,
+				9ACFB9432C37FA57001D50CA /* TranslationRepositoryTestCase.swift */,
+			);
+			path = translation;
+			sourceTree = "<group>";
+		};
+		9AF4A6C62C2477CD00279268 /* voyageTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ACFB93E2C37F92E001D50CA /* translation */,
+				9ACFB9352C37F5BA001D50CA /* weather */,
+				9AF4A6D22C247B7700279268 /* currency */,
+				9AF4A6E22C25651A00279268 /* MockURLProtocol.swift */,
+				9AF4A6E62C2567D400279268 /* MockAPIClient.swift */,
+			);
+			path = voyageTests;
+			sourceTree = "<group>";
+		};
+		9AF4A6D22C247B7700279268 /* currency */ = {
+			isa = PBXGroup;
+			children = (
+				9AF4A6CE2C24784600279268 /* CurrencyRepositoryTestCase.swift */,
+				9AF4A6D02C2479FB00279268 /* ExchangeRates.json */,
+				9AF4A6D32C247D4700279268 /* FakeCurrencyResponse.swift */,
+			);
+			path = currency;
+			sourceTree = "<group>";
+		};
+		9AF4A6DF2C25518500279268 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AF4A6E02C2551B400279268 /* ExchangeViewController.swift */,
+				9A1207B62C3826280056F5A0 /* TranslationViewController.swift */,
+				9A1207B82C38264C0056F5A0 /* WeatherViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +262,25 @@
 			productReference = 9A3593DB2C1222F3008A83F4 /* voyage.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9AF4A6C42C2477CD00279268 /* voyageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF4A6CD2C2477CE00279268 /* Build configuration list for PBXNativeTarget "voyageTests" */;
+			buildPhases = (
+				9AF4A6C12C2477CD00279268 /* Sources */,
+				9AF4A6C22C2477CD00279268 /* Frameworks */,
+				9AF4A6C32C2477CD00279268 /* Resources */,
+				9AF4A6D82C247E8100279268 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AF4A6CA2C2477CD00279268 /* PBXTargetDependency */,
+			);
+			name = voyageTests;
+			productName = voyageTests;
+			productReference = 9AF4A6C52C2477CD00279268 /* voyageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +293,11 @@
 				TargetAttributes = {
 					9A3593DA2C1222F3008A83F4 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					9AF4A6C42C2477CD00279268 = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+						TestTargetID = 9A3593DA2C1222F3008A83F4;
 					};
 				};
 			};
@@ -169,6 +315,7 @@
 			projectRoot = "";
 			targets = (
 				9A3593DA2C1222F3008A83F4 /* voyage */,
+				9AF4A6C42C2477CD00279268 /* voyageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,13 +325,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF4A6D62C247E7300279268 /* .swiftlint.yml in Resources */,
 				9A3593E82C1222F4008A83F4 /* Assets.xcassets in Resources */,
 				9A3593EB2C1222F4008A83F4 /* Base in Resources */,
 				9A3593E62C1222F3008A83F4 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AF4A6C32C2477CD00279268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF4A6D72C247E7300279268 /* .swiftlint.yml in Resources */,
+				9ACFB9372C37F5DC001D50CA /* Weather.json in Resources */,
+				9AF4A6D12C2479FB00279268 /* ExchangeRates.json in Resources */,
+				9ACFB9402C37F957001D50CA /* Translation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AF4A6D82C247E8100279268 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A3593D72C1222F3008A83F4 /* Sources */ = {
@@ -192,11 +372,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A8849982C1B5165000E97CE /* WeatherRepository.swift in Sources */,
+				9A1207B92C38264C0056F5A0 /* WeatherViewController.swift in Sources */,
 				9A88499A2C1B5585000E97CE /* WeatherResponse.swift in Sources */,
+				9AF4A6E92C25693600279268 /* BaseAPIClient.swift in Sources */,
 				9A3593E32C1222F3008A83F4 /* ViewController.swift in Sources */,
+				9A45EC672C4052F8001604CA /* LabelView.swift in Sources */,
 				9A3593F82C12643A008A83F4 /* ExchangeRate.swift in Sources */,
 				9A75996C2C197DB300CB3C3B /* TranslationResponse.swift in Sources */,
+				9AF4A6E52C2566EA00279268 /* APIClientProtocol.swift in Sources */,
 				9A3593FA2C12D8E4008A83F4 /* RatesResponse.swift in Sources */,
+				9A1207B72C3826280056F5A0 /* TranslationViewController.swift in Sources */,
+				9AF4A6E12C2551B400279268 /* ExchangeViewController.swift in Sources */,
 				9A3593DF2C1222F3008A83F4 /* AppDelegate.swift in Sources */,
 				9A3593F42C1223AD008A83F4 /* CurrencyRepository.swift in Sources */,
 				9A75996A2C18E0C400CB3C3B /* TranslationRepository.swift in Sources */,
@@ -204,7 +390,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AF4A6C12C2477CD00279268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACFB9392C37F5F9001D50CA /* FakeWeatherResponse.swift in Sources */,
+				9ACFB9442C37FA57001D50CA /* TranslationRepositoryTestCase.swift in Sources */,
+				9AF4A6E32C25651A00279268 /* MockURLProtocol.swift in Sources */,
+				9AF4A6E72C2567D400279268 /* MockAPIClient.swift in Sources */,
+				9AF4A6D42C247D4700279268 /* FakeCurrencyResponse.swift in Sources */,
+				9AF4A6CF2C24784600279268 /* CurrencyRepositoryTestCase.swift in Sources */,
+				9ACFB9422C37F9D5001D50CA /* FakeTranslationResponse.swift in Sources */,
+				9ACFB93D2C37F657001D50CA /* WeatherRepositoryTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AF4A6CA2C2477CD00279268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A3593DA2C1222F3008A83F4 /* voyage */;
+			targetProxy = 9AF4A6C92C2477CD00279268 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9A3593E42C1222F3008A83F4 /* Main.storyboard */ = {
@@ -401,6 +610,47 @@
 			};
 			name = Release;
 		};
+		9AF4A6CB2C2477CD00279268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C224G98N89;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hugoblas.voyageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voyage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/voyage";
+			};
+			name = Debug;
+		};
+		9AF4A6CC2C2477CD00279268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C224G98N89;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hugoblas.voyageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voyage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/voyage";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +668,15 @@
 			buildConfigurations = (
 				9A3593F02C1222F4008A83F4 /* Debug */,
 				9A3593F12C1222F4008A83F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF4A6CD2C2477CE00279268 /* Build configuration list for PBXNativeTarget "voyageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF4A6CB2C2477CD00279268 /* Debug */,
+				9AF4A6CC2C2477CD00279268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

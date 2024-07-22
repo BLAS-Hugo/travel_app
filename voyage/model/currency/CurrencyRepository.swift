@@ -8,6 +8,14 @@
 import Foundation
 
 class CurrencyRepository {
+    var client: APIClientProtocol
+
+    static var shared = CurrencyRepository(client: BaseAPIClient())
+
+    init(client: APIClientProtocol) {
+        self.client = client
+    }
+
     private let baseUrl: String = "http://data.fixer.io/api/"
     private let apiKey: String = "b798a571e8bc935167eafe2edf2b0bc2"
 
@@ -16,18 +24,16 @@ class CurrencyRepository {
 
         let request = URLRequest(url: url!)
 
-        let (data, _) = try await URLSession.shared.data(for: request)
+        let (data, _) = try await client.urlSession.data(for: request)
 
         let rates = try JSONDecoder().decode(RatesResponse.self, from: data)
 
         writeToFile(rates: rates)
 
-        readRatesFromCache()
-
         return rates
     }
 
-    private func writeToFile(rates: RatesResponse) {
+    func writeToFile(rates: RatesResponse) {
         if let json = try? JSONEncoder().encode(rates) {
             let url = URL.documentsDirectory.appending(path: "rates.json")
 
@@ -39,17 +45,13 @@ class CurrencyRepository {
         }
     }
 
-    private func readRatesFromCache() {
+    func readRatesFromCache() throws -> RatesResponse {
         let url = URL.documentsDirectory.appending(path: "rates.json")
 
-        do {
-            let data = try Data(contentsOf: url)
+        let data = try Data(contentsOf: url)
 
-            let rates = try JSONDecoder().decode(RatesResponse.self, from: data)
+        let rates = try JSONDecoder().decode(RatesResponse.self, from: data)
 
-            print(rates.rates)
-        } catch {
-            print("error")
-        }
+        return rates
     }
 }

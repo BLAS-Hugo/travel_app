@@ -8,6 +8,14 @@
 import Foundation
 
 class TranslationRepository {
+    var client: APIClientProtocol
+
+    static var shared = TranslationRepository(client: BaseAPIClient())
+
+    init(client: APIClientProtocol) {
+        self.client = client
+    }
+
     private let baseUrl: String = "https://translation.googleapis.com/language/translate/v2"
     private let apiKey: String = "AIzaSyB4e9UBWTbn9jjnaIS3z-xUJ9aTQ26pbyc"
 
@@ -16,7 +24,7 @@ class TranslationRepository {
 
         let request = URLRequest(url: url!)
 
-        let (data, _) = try await URLSession.shared.data(for: request)
+        let (data, _) = try await client.urlSession.data(for: request)
 
         let translate = try JSONDecoder().decode(TranslationResponse.self, from: data)
 
